@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VOTE</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            width: 50%;
+            text-align: center;
+        }
+    </style>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .title {
+            text-align: center;
+        }
+        form {
+            width: 50%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <p>consommation d'un smart contrat </p>
+        <p>Realiser par AIT SIDI LKHIR ALI </p>
+        <p>Encadré par MR TALI</p>
+    <div class="header">
+        
+        <img src="{% static '\images\photo.jpg' %}">
+        
+        
+    </div>
+    <div class="title">
+        <h1>VOTER POUR VOTRE MEILLEUR MASTER</h1>
+    </div>
+   
+    <form method="get" action="{% url 'resultat_de_vote' %}" class="center-form">
+       
+
+        <label for="nom_personne">Choisissez une filiere de MASTER :</label>
+        <select name="nom_personne" id="nom_personne">
+            <option value="MASTER DSEF">MASTER DSEF </option>
+            <option value="MASTER IMQ">MASTER IMQ</option>
+        </select>
+        <br><br>
+        <input type="submit" value="VOTER">
+    </form>
+   
+</body>
+</html>

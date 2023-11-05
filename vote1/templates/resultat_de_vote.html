@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Résultat de vote provisoire</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            width: 50%;
+            text-align: center;
+        }
+    </style>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .title {
+            text-align: center;
+        }
+        form {
+            width: 50%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p>vous avez voté pour la filiere  : {{ nom_personne }}</p>
+    <div class="title">
+        <h1>Résultat de vote provisoire</h1>
+    </div>
+    
+    <p> MASTER DSEF : <span style="font-size: 20px;"><strong>{{ votes_p1 }}voix</strong></span> </p>
+
+    <p> MASTER IMQ  : <span style="font-size: 20px;"><strong>{{ votes_p2 }} voix </strong></span></p>
+    <p>LA FILIERE GAGNANTE PROVISOIREMENT EST : <span style="font-size: 20px;"><strong>  {{gagnat}}</strong></span> </p>
+    
+    <a href="https://sepolia.etherscan.io/address/0xb9380FBAa7De47828bbc0d770b9dFd97779f1E5F" target="_blank">VOIR LA TRANSACTION DANS etherscan </a>
+   
+    
+    
+</body>
+</html>
